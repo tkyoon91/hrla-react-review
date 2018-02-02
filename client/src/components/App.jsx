@@ -23,6 +23,7 @@ class App extends Component {
 
   finishTask(i){
     let copy = this.state.tasks.slice();
+    copy.splice(i, 1);
     this.setState({tasks: copy})
   }
 
